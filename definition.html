@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head -->
+
+<head>
+    <title>智慧医疗</title>
+    <meta charset="utf-8" />
+    <!-- <meta content="width=device-width, initial-scale=1.0" name="viewport" /> -->
+    <meta name="description" content="" />
+    <meta name="keywords" content="">
+    <meta name="author" content="" />
+    <meta name="MobileOptimized" content="320" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />  -->
+    <!-- favicon-icon -->
+    <link rel="icon" type="image/icon" href="images/favicon/favicon.ico">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menu marker CSS -->
+    <link href="css/fontello.css" rel="stylesheet">
+    <!-- Template fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800" rel="stylesheet">
+    <!-- Font Awesome CSS -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Font simple-line-icons CSS -->
+    <link href="css/simple-line-icons.css" rel="stylesheet">
+    <!-- Font Custom  CSS -->
+    <link href="css/menumaker.css" rel="stylesheet">
+    <!-- OWL CSS -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <!-- Template Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Stucture CSS -->
+    <link href="css/stucture.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<!-- /end head -->
+
+<body>
+    <!--  Topbar -->
+    <!-- <div class="topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5">
+                    <p class="wel-msg">欢迎来到智慧医疗系统</p>
+                </div>
+                <div class="col-md-7 col-sm-7 hidden-xs">
+                    <div class="topbar-contact"> <span class="topbar-email topbar-info"><a href="#"><i
+                                    class="fa fa-envelope"></i>info@medical.com</a></span> <span class="topbar-info"><a
+                                href="#"><i class="fa fa fa-comments-o"></i>live chat</a></span> </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- /Topbar -->
+
+    <!-- Header -->
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"><a class="navbar-brand" href="index.html"><img src="images/logo.png"
+                            class="img-responsive" alt="Logo"></a> </div>
+                <div class="col-md-9">
+                    <div class="menu-box">
+                        <div id="navmenu">
+                            <ul>
+                                <li><a href="definition.html" id="1Link">智慧医疗的定义</a>
+                                </li>
+                                <li><a href="role.html" id="4Link">智慧医疗的作用</a>
+                                </li>
+                                <li><a href="area.html" id="5Link">智慧医疗的应用领域</a>
+                                </li>
+                                <li><a href="safety.html" id="6Link">智慧医疗的安全性与法律监管</a>
+                                </li>
+                                <li><a href="fazhan.html" id="7Link">智慧医疗在特殊领域的发展趋势</a>
+                                </li>
+                                <li><a href="zhanwang.html" id="8Link">智慧医疗的局限和展望</a>
+                                </li>
+                                <li>
+                                    <a href="index.html" id="9Link">返回首页</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Header -->
+
+
+    <div id="One">
+        <img style="width: 100%;" src="images/pic/define/index.png" />
+    </div> 
+        <!-- /Tiny Footer-section -->
+        <!-- jquery -->
+
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/waypoints.min.js"></script>
+        <!-- facts count js Required for jquery.counterup.js file -->
+        <script type="text/javascript" src="js/jquery.counterup.js"></script>
+        <script type="text/javascript" src="js/menumaker.js"></script>
+        <script type="text/javascript" src="js/theme.js"></script>
+        <script>
+            // 获取按钮元素
+            var btn = document.getElementById("back-to-top");
+
+            // 当页面滚动时，判断是否显示按钮
+            window.onscroll = function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+            };
+
+            // 当按钮被点击时，回到页面顶部
+            btn.onclick = function () {
+                document.body.scrollTop = 0; // 兼容旧版浏览器
+                document.documentElement.scrollTop = 0; // 现代浏览器
+            };
+            function smoothScroll(target) {
+                // 计算目标位置的y坐标
+                var offset = target.offsetTop;
+                var scrollY = window.scrollY || window.pageYOffset;
+                var headerHeight = 60; // 如果页面有固定的导航栏等元素，需要将其高度加上
+                var targetY = offset - headerHeight;
+
+                // 使用平滑滚动的方式将页面滚动到目标位置
+                var duration = 1000; // 滚动的持续时间
+                var startTime = performance.now(); // 开始滚动的时间
+                var easeInOutQuad = function (t) { return t < .5 ? 2 * t * t : -1 + (4 - 2 * t) * t }; // 缓动函数
+                var animateScroll = function (currentTime) {
+                    var elapsed = currentTime - startTime;
+                    var scrollAmount = easeInOutQuad(elapsed / duration) * (targetY - scrollY);
+                    window.scrollTo(0, scrollY + scrollAmount + 60);
+                    if (elapsed < duration) {
+                        requestAnimationFrame(animateScroll);
+                    }
+                };
+                requestAnimationFrame(animateScroll);
+            }
+
+            var links = document.querySelectorAll("a[href^='#']");
+
+            links.forEach(function (link) {
+                link.addEventListener("click", function (event) {
+                    // 阻止默认的链接跳转行为
+                    event.preventDefault();
+
+                    // 获取目标位置的元素
+                    var target = document.getElementById(link.getAttribute("href").substring(1));
+
+                    // 滚动到目标位置
+                    smoothScroll(target);
+                });
+            });
+        </script>
+        <!-- end  jquery -->
+</body>
+
+<style>
+</style>
+
+</html>
